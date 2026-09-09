@@ -1,0 +1,986 @@
+2026-08-30 00:42:06,729 [INFO] ====== WebDriver manager ======
+2026-08-30 00:42:09,049 [INFO] Get LATEST chromedriver version for google-chrome
+2026-08-30 00:42:09,271 [INFO] There is no [win64] chromedriver "152.0.7977.64" for browser google-chrome "152.0.7977" in cache
+2026-08-30 00:42:10,244 [INFO] There is no [win64] chromedriver "152.0.7977.64" for browser google-chrome "152.0.7977" in cache
+2026-08-30 00:42:10,244 [INFO] Get LATEST chromedriver version for google-chrome
+2026-08-30 00:42:10,749 [INFO] WebDriver version 152.0.7977.64 selected
+2026-08-30 00:42:10,760 [INFO] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/152.0.7977.64/win64/chromedriver-win64.zip
+2026-08-30 00:42:10,761 [INFO] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/152.0.7977.64/win64/chromedriver-win64.zip
+2026-08-30 00:42:11,075 [INFO] Driver downloading response is 200
+2026-08-30 00:42:13,146 [INFO] Driver has been saved in cache [C:\Users\User\.wdm\drivers\chromedriver\win64\152.0.7977.64]
+2026-08-30 00:42:14,875 [INFO] 正在開啟搜尋頁面: https://www.ytower.com.tw/recipe/recipe-search.asp?MAINFOOD=%C2%FB%A6%D7
+2026-08-30 00:42:22,343 [INFO] 開始無限制滾動加載...
+2026-08-30 00:42:50,386 [INFO] 偵測到 1199 筆新食譜，開始解析詳細頁...
+2026-08-30 00:42:50,756 [INFO] [1] 已存檔: 食譜:剝皮辣椒雞湯:www.ytower.com.tw
+2026-08-30 00:42:51,503 [INFO] [2] 已存檔: 食譜:糖醋雞丁:www.ytower.com.tw
+2026-08-30 00:42:52,387 [INFO] [3] 已存檔: 食譜:照燒雞肉:www.ytower.com.tw
+2026-08-30 00:42:53,001 [INFO] [4] 已存檔: 食譜:醬爆雞丁(2):www.ytower.com.tw
+2026-08-30 00:42:53,632 [INFO] [5] 已存檔: 食譜:麻油雞(5):www.ytower.com.tw
+2026-08-30 00:42:54,239 [INFO] [6] 已存檔: 食譜:文昌油雞:www.ytower.com.tw
+2026-08-30 00:42:54,843 [INFO] [7] 已存檔: 食譜:人蔘枸杞雞湯:www.ytower.com.tw
+2026-08-30 00:42:55,463 [INFO] [8] 已存檔: 食譜:香煎雞腿排:www.ytower.com.tw
+2026-08-30 00:42:56,336 [INFO] [9] 已存檔: 食譜:椒麻雞(6):www.ytower.com.tw
+2026-08-30 00:42:57,340 [INFO] [10] 已存檔: 食譜:三杯雞(26):www.ytower.com.tw
+2026-08-30 00:42:58,210 [INFO] [11] 已存檔: 食譜:冰鎮醉雞:www.ytower.com.tw
+2026-08-30 00:45:27,882 [INFO] ====== WebDriver manager ======
+2026-08-30 00:45:29,035 [INFO] Driver [C:\Users\User\.wdm\drivers\chromedriver\win64\152.0.7977.64\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-08-30 00:45:30,721 [INFO] === 開啟分類清單: https://www.ytower.com.tw/recipe/recipe-search.asp?MAINFOOD=%C2%FB%A6%D7&country=%A4%A4%A6%A1 ===
+2026-08-30 00:45:36,385 [INFO] 爬取結束，總共累計 0 筆食譜。
+2026-08-30 00:50:39,237 [INFO] 從既有 CSV 載入 11 筆食譜去重索引。
+2026-08-30 00:50:39,237 [INFO] ====== WebDriver manager ======
+2026-08-30 00:50:40,410 [INFO] Driver [C:\Users\User\.wdm\drivers\chromedriver\win64\152.0.7977.64\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-08-30 00:50:42,023 [INFO] === 開始檢索分類關鍵字: [蛋] ===
+2026-08-30 00:50:46,941 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:50:46,941 [INFO] === 開始檢索分類關鍵字: [牛肉] ===
+2026-08-30 00:50:50,138 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:50:50,139 [INFO] === 開始檢索分類關鍵字: [豬肉] ===
+2026-08-30 00:50:53,582 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:50:53,583 [INFO] === 開始檢索分類關鍵字: [雞肉] ===
+2026-08-30 00:50:56,428 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:50:56,429 [INFO] === 開始檢索分類關鍵字: [羊肉] ===
+2026-08-30 00:51:02,301 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:02,302 [INFO] === 開始檢索分類關鍵字: [鴨肉] ===
+2026-08-30 00:51:05,135 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:05,135 [INFO] === 開始檢索分類關鍵字: [鵝肉] ===
+2026-08-30 00:51:09,018 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:09,018 [INFO] === 開始檢索分類關鍵字: [魚肉] ===
+2026-08-30 00:51:12,283 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:12,284 [INFO] === 開始檢索分類關鍵字: [貝類] ===
+2026-08-30 00:51:15,408 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:15,408 [INFO] === 開始檢索分類關鍵字: [蝦] ===
+2026-08-30 00:51:18,375 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:18,375 [INFO] === 開始檢索分類關鍵字: [蟹] ===
+2026-08-30 00:51:21,341 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:21,342 [INFO] === 開始檢索分類關鍵字: [豆腐] ===
+2026-08-30 00:51:24,319 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:24,319 [INFO] === 開始檢索分類關鍵字: [蒟蒻] ===
+2026-08-30 00:51:27,131 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:27,131 [INFO] === 開始檢索分類關鍵字: [根莖] ===
+2026-08-30 00:51:30,008 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:30,008 [INFO] === 開始檢索分類關鍵字: [葉菜] ===
+2026-08-30 00:51:32,901 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:32,902 [INFO] === 開始檢索分類關鍵字: [瓜果] ===
+2026-08-30 00:51:35,152 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:35,152 [INFO] === 開始檢索分類關鍵字: [水果] ===
+2026-08-30 00:51:38,057 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:38,057 [INFO] === 開始檢索分類關鍵字: [菇] ===
+2026-08-30 00:51:40,883 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:40,883 [INFO] === 開始檢索分類關鍵字: [堅果] ===
+2026-08-30 00:51:43,788 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:43,789 [INFO] === 開始檢索分類關鍵字: [中式] ===
+2026-08-30 00:51:46,705 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:46,705 [INFO] === 開始檢索分類關鍵字: [韓式] ===
+2026-08-30 00:51:49,717 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:49,717 [INFO] === 開始檢索分類關鍵字: [西式] ===
+2026-08-30 00:51:52,757 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:52,758 [INFO] === 開始檢索分類關鍵字: [南洋] ===
+2026-08-30 00:51:55,668 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:55,668 [INFO] === 開始檢索分類關鍵字: [日式] ===
+2026-08-30 00:51:58,584 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:51:58,584 [INFO] === 開始檢索分類關鍵字: [主菜] ===
+2026-08-30 00:52:01,573 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:52:01,573 [INFO] === 開始檢索分類關鍵字: [前菜] ===
+2026-08-30 00:52:04,439 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:52:04,440 [INFO] === 開始檢索分類關鍵字: [湯] ===
+2026-08-30 00:52:07,450 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:52:07,450 [INFO] === 開始檢索分類關鍵字: [點心] ===
+2026-08-30 00:52:10,577 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:52:10,577 [INFO] === 開始檢索分類關鍵字: [飯食] ===
+2026-08-30 00:52:13,605 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:52:13,605 [INFO] === 開始檢索分類關鍵字: [粥] ===
+2026-08-30 00:52:16,475 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:52:16,475 [INFO] === 開始檢索分類關鍵字: [麵食] ===
+2026-08-30 00:52:19,461 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:52:19,461 [INFO] === 開始檢索分類關鍵字: [飲料] ===
+2026-08-30 00:52:22,372 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:52:22,373 [INFO] === 開始檢索分類關鍵字: [葷食] ===
+2026-08-30 00:52:25,374 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:52:25,375 [INFO] === 開始檢索分類關鍵字: [素食] ===
+2026-08-30 00:52:28,400 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:52:28,400 [INFO] === 開始檢索分類關鍵字: [蛋糕] ===
+2026-08-30 00:52:31,273 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:52:31,273 [INFO] === 開始檢索分類關鍵字: [西點] ===
+2026-08-30 00:52:34,307 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:52:34,307 [INFO] === 開始檢索分類關鍵字: [麵包] ===
+2026-08-30 00:52:37,233 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:52:37,233 [INFO] === 開始檢索分類關鍵字: [餅乾] ===
+2026-08-30 00:52:40,194 [ERROR] 搜尋欄操作失敗: Message: element not interactable
+  (Session info: chrome=152.0.7977.64); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6e76b8a65+5625]
+	chromedriver!(No symbol) [0x7ff6e75dce10]
+	chromedriver!(No symbol) [0x7ff6e7405d76]
+	chromedriver!(No symbol) [0x7ff6e7457c97]
+	chromedriver!(No symbol) [0x7ff6e7489faa]
+	chromedriver!(No symbol) [0x7ff6e7455006]
+	chromedriver!(No symbol) [0x7ff6e74aeef1]
+	chromedriver!(No symbol) [0x7ff6e745384b]
+	chromedriver!(No symbol) [0x7ff6e7454783]
+	chromedriver!GetHandleVerifier [0x7ff6e7ad476b+42132b]
+	chromedriver!GetHandleVerifier [0x7ff6e7affcf2+44c8b2]
+	chromedriver!GetHandleVerifier [0x7ff6e7af3c9e+44085e]
+	chromedriver!GetHandleVerifier [0x7ff6e77b4e3e+1019fe]
+	chromedriver!(No symbol) [0x7ff6e75e9f6c]
+	chromedriver!(No symbol) [0x7ff6e75e5c44]
+	chromedriver!(No symbol) [0x7ff6e75e5dd4]
+	chromedriver!(No symbol) [0x7ff6e75d0cbc]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b7aeccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b8d0ad6c+2c]
+
+2026-08-30 00:52:42,517 [INFO] === 爬蟲執行完畢！本次新增 0 筆，資料庫累計共 0 筆食譜 ===
+2026-08-30 00:54:33,273 [INFO] 從既有 CSV 載入 11 筆食譜去重索引。
+2026-08-30 00:54:33,275 [INFO] ====== WebDriver manager ======
+2026-08-30 00:54:34,619 [INFO] Driver [C:\Users\User\.wdm\drivers\chromedriver\win64\152.0.7977.64\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-08-30 00:54:35,468 [INFO] === 開始檢索分類關鍵字: [蛋] ===
+2026-08-30 00:55:46,505 [INFO] === 開始檢索分類關鍵字: [牛肉] ===
+2026-08-30 00:56:49,986 [INFO] === 開始檢索分類關鍵字: [豬肉] ===
+2026-08-30 00:57:52,210 [INFO] === 開始檢索分類關鍵字: [雞肉] ===
+2026-08-30 00:58:54,877 [INFO] === 開始檢索分類關鍵字: [羊肉] ===
+2026-08-30 00:59:23,002 [INFO] === 開始檢索分類關鍵字: [鴨肉] ===
+2026-08-30 00:59:50,760 [INFO] === 開始檢索分類關鍵字: [鵝肉] ===
+2026-08-30 01:00:10,744 [INFO] === 開始檢索分類關鍵字: [魚肉] ===
+2026-08-30 01:01:11,569 [INFO] === 開始檢索分類關鍵字: [貝類] ===
+2026-08-30 01:01:49,372 [INFO] === 開始檢索分類關鍵字: [蝦] ===
+2026-08-30 01:02:47,515 [INFO] === 開始檢索分類關鍵字: [蟹] ===
+2026-08-30 01:03:17,101 [INFO] === 開始檢索分類關鍵字: [豆腐] ===
+2026-08-30 01:04:22,580 [INFO] === 開始檢索分類關鍵字: [蒟蒻] ===
+2026-08-30 01:04:50,595 [INFO] === 開始檢索分類關鍵字: [根莖] ===
+2026-08-30 01:05:49,093 [INFO] === 開始檢索分類關鍵字: [葉菜] ===
+2026-08-30 01:06:49,745 [INFO] === 開始檢索分類關鍵字: [瓜果] ===
+2026-08-30 01:07:49,847 [INFO] === 開始檢索分類關鍵字: [水果] ===
+2026-08-30 01:08:53,106 [INFO] === 開始檢索分類關鍵字: [菇] ===
+2026-08-30 01:09:55,112 [INFO] === 開始檢索分類關鍵字: [堅果] ===
+2026-08-30 01:10:16,675 [INFO] === 開始檢索分類關鍵字: [中式] ===
+2026-08-30 01:11:12,167 [INFO] === 開始檢索分類關鍵字: [韓式] ===
+2026-08-30 01:11:50,960 [INFO] === 開始檢索分類關鍵字: [西式] ===
+2026-08-30 01:12:46,303 [INFO] === 開始檢索分類關鍵字: [南洋] ===
+2026-08-30 01:13:42,401 [INFO] === 開始檢索分類關鍵字: [日式] ===
+2026-08-30 01:14:46,604 [INFO] === 開始檢索分類關鍵字: [主菜] ===
+2026-08-30 01:15:51,270 [INFO] === 開始檢索分類關鍵字: [前菜] ===
+2026-08-30 01:16:56,189 [INFO] === 開始檢索分類關鍵字: [湯] ===
+2026-08-30 01:17:58,593 [INFO] === 開始檢索分類關鍵字: [點心] ===
+2026-08-30 01:18:56,438 [INFO] === 開始檢索分類關鍵字: [飯食] ===
+2026-08-30 01:19:54,599 [INFO] === 開始檢索分類關鍵字: [粥] ===
+2026-08-30 01:20:28,319 [INFO] === 開始檢索分類關鍵字: [麵食] ===
+2026-08-30 01:21:27,580 [INFO] === 開始檢索分類關鍵字: [飲料] ===
+2026-08-30 01:22:17,825 [INFO] === 開始檢索分類關鍵字: [葷食] ===
+2026-08-30 01:23:17,621 [INFO] === 開始檢索分類關鍵字: [素食] ===
+2026-08-30 01:24:16,573 [INFO] === 開始檢索分類關鍵字: [蛋糕] ===
+2026-08-30 01:24:57,356 [INFO] === 開始檢索分類關鍵字: [西點] ===
+2026-08-30 01:25:28,090 [INFO] === 開始檢索分類關鍵字: [麵包] ===
+2026-08-30 01:26:17,051 [INFO] === 開始檢索分類關鍵字: [餅乾] ===
+2026-08-30 01:26:51,308 [INFO] === 爬蟲執行結束！本次新增 0 筆，累積共 0 筆食譜 ===

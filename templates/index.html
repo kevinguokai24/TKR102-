@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>食譜資料庫檢索</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 30px; background: #f8fafc; }
+        .filter-panel { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+        .recipe-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .recipe-details { display: flex; gap: 30px; margin-top: 15px; }
+        .ingredients-col, .instructions-col { flex: 1; }
+        .badge { background: #e0f2fe; color: #0369a1; padding: 3px 8px; border-radius: 4px; font-size: 12px; margin-right: 6px; }
+        h3 { margin-top: 0; color: #0f172a; }
+        h4 { margin: 8px 0; color: #334155; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; }
+        ul, ol { padding-left: 20px; margin-top: 6px; }
+    </style>
+</head>
+<body>
+
+<div class="filter-panel">
+    <select id="cuisine">
+        <option value="全部">全部菜系</option>
+        <option value="中式">中式</option>
+        <option value="韓式">韓式</option>
+        <option value="西式">西式</option>
+        <option value="南洋">南洋</option>
+        <option value="日式">日式</option>
+        <option value="其他">其他</option>
+    </select>
+
+    <select id="diet">
+        <option value="全部">全部飲食</option>
+        <option value="葷食">葷食</option>
+        <option value="素食">素食</option>
+    </select>
+
+    <input type="text" id="keyword" placeholder="搜尋食譜或關鍵字 (如: 雞蛋糕、蛋)...">
+    <button onclick="fetchRecipes()">搜尋</button>
+</div>
+
+<div id="recipe-list"></div>
+
+<script>
+async function fetchRecipes() {
+    const cuisine = document.getElementById('cuisine').value;
+    const diet = document.getElementById('diet').value;
+    const keyword = document.getElementById('keyword').value;
+
+    const params = new URLSearchParams({ cuisine, diet, keyword });
+    const res = await fetch(`/api/recipes?${params.toString()}`);
+    const recipes = await res.json();
+
+    const container = document.getElementById('recipe-list');
+    container.innerHTML = '';
+
+    if (recipes.length === 0) {
+        container.innerHTML = '<p>查無符合條件的食譜資料。</p>';
+        return;
+    }
+
+    recipes.forEach(r => {
+        const card = document.createElement('div');
+        card.className = 'recipe-card';
+
+        let ingHtml = '';
+        let currentGroup = '';
+        r.ingredients.forEach(i => {
+            if (i.group_name && i.group_name !== currentGroup) {
+                currentGroup = i.group_name;
+                ingHtml += `<li style="list-style:none; font-weight:bold; margin-top:4px;">${currentGroup} 組：</li>`;
+            }
+            ingHtml += `<li>${i.item_name}：${i.amount}</li>`;
+        });
+
+        const instHtml = r.instructions.map(step => `<li>${step.description}</li>`).join('');
+        const tagsHtml = r.tags.map(tag => `<span class="badge">#${tag}</span>`).join('');
+
+        card.innerHTML = `
+            <h3>${r.title} [${r.cuisine_type} / ${r.diet_type}]</h3>
+            <div>${tagsHtml}</div>
+            <div class="recipe-details">
+                <div class="ingredients-col">
+                    <h4>【材 料】</h4>
+                    <ul>${ingHtml}</ul>
+                </div>
+                <div class="instructions-col">
+                    <h4>【做 法】</h4>
+                    <ol>${instHtml}</ol>
+                </div>
+            </div>
+        `;
+        container.appendChild(card);
+    });
+}
+
+fetchRecipes();
+</script>
+</body>
+</html>
