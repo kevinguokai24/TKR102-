@@ -702,3 +702,6 @@ else:
             if st.button("下一頁 ➡️", disabled=st.session_state.list_page >= total_pages - 1, use_container_width=True):
                 st.session_state.list_page += 1
                 st.rerun()
+
+
+    # 打開終端機輸入：uv run streamlit run 網頁.py
