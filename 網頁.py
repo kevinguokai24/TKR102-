@@ -13,6 +13,35 @@ from collections import defaultdict
 st.set_page_config(page_title="今天吃啥咪！", layout="wide", page_icon="🍳")
 
 # -------------------------------------------------------------
+# 0. 全域樣式：固定卡片圖片尺寸（改用 st.container(key=...) 產生的真實
+#    CSS class 來套用樣式，不再用「開標籤不關閉」的 HTML 技巧，避免破版）
+# -------------------------------------------------------------
+st.markdown(
+    """
+    <style>
+    /* 凡是 key 結尾為 _imgbox 的容器，裡面的圖片一律固定大小、等比裁切置中 */
+    div[class*="_imgbox"] img {
+        width: 100% !important;
+        height: 180px !important;
+        object-fit: cover !important;
+        border-radius: 10px !important;
+        display: block !important;
+    }
+
+    /* 「查看完整食譜內容」按鈕外觀微調，看起來像可點擊的一列文字 */
+    div[class*="_detailbtn"] button {
+        width: 100% !important;
+        text-align: left !important;
+        justify-content: flex-start !important;
+        color: #666 !important;
+        font-weight: 400 !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+# -------------------------------------------------------------
 # 1. 食材熱量對照表 (每 100g 估算大卡 kcal) - 標準資料
 #    註：以下為常見食材的概略營養資料，非官方精確數值，僅供參考。
 # -------------------------------------------------------------
@@ -422,16 +451,39 @@ def render_full_recipe_details(row, key_prefix):
         )
 
 
+@st.dialog("料理詳情", width="large")
+def show_recipe_dialog(row, key_prefix):
+    """點擊「查看完整食譜內容」時彈出的完整食譜內容視窗，含圖片"""
+    with st.container(key=f"{key_prefix}_dialog_imgbox"):
+        st.image(row["圖片"], use_container_width=True)
+    st.subheader(row["菜名"])
+    st.caption(f"風格：{row['菜系']} ｜ 烹飪時間：{row['耗時']}")
+    st.write(f"**料理特色**：{row['特色']}")
+    st.markdown("---")
+    render_full_recipe_details(row, key_prefix=f"dialog_{key_prefix}")
+
+
 # -------------------------------------------------------------
 # 6. 側邊欄（快速搜尋 + LINE 好友資訊）
 # -------------------------------------------------------------
+def _reset_all_filters():
+    st.session_state["search_keyword_input"] = ""
+    st.session_state["cuisine_filter"] = []
+    st.session_state["category_filter"] = []
+    st.session_state["time_bucket_filter"] = None
+    st.session_state["list_page"] = 0
+
+
 with st.sidebar:
     st.header("🔍 快速搜尋")
     search_keyword = st.text_input(
         "輸入食材、菜名或調味料搜尋美味料理：",
         "",
-        placeholder="例如：雞肉、豆腐、義大利麵、蒜香"
+        placeholder="例如：雞肉、豆腐、義大利麵、蒜香",
+        key="search_keyword_input"
     )
+
+    st.button("🍽️ 顯示全部料理", use_container_width=True, on_click=_reset_all_filters)
 
     st.markdown("---")
     st.markdown("### 💬 加入 LINE 好友")
@@ -453,27 +505,30 @@ with filter_col:
         "① 菜系風格",
         options=CUISINE_STYLE_OPTIONS,
         default=[],
-        placeholder="不選代表顯示全部菜系"
+        placeholder="不選代表顯示全部菜系",
+        key="cuisine_filter"
     )
     selected_categories = st.multiselect(
         "② 食材分類",
         options=INGREDIENT_CATEGORY_OPTIONS,
         default=[],
-        placeholder="不選代表顯示全部食材"
+        placeholder="不選代表顯示全部食材",
+        key="category_filter"
     )
     selected_time_bucket = st.radio(
         "③ 烹飪耗時",
         options=TIME_BUCKET_OPTIONS,
-        index=0,
-        horizontal=True
+        index=None,
+        horizontal=True,
+        key="time_bucket_filter"
     )
 
 st.markdown("---")
 
 # -------------------------------------------------------------
-# 8. 輪播控制 Session State（固定抽取 10 道菜做為精選輪播池）
+# 8. 輪播控制 Session State（固定抽取 15 道菜做為精選輪播池）
 # -------------------------------------------------------------
-CAROUSEL_SIZE = 10
+CAROUSEL_SIZE = 15
 CAROUSEL_INTERVAL_SECONDS = 4
 
 if "carousel_pool_indices" not in st.session_state:
@@ -498,7 +553,7 @@ def _set_carousel_index(new_idx, n):
 is_default_view = (
     not selected_cuisines
     and not selected_categories
-    and selected_time_bucket == "全部時段"
+    and selected_time_bucket in (None, "全部時段")
     and not search_keyword.strip()
 )
 
@@ -560,7 +615,7 @@ if selected_categories:
         lambda row: bool(get_ingredient_category_tags(row) & set(selected_categories)), axis=1
     )]
 
-if selected_time_bucket != "全部時段":
+if selected_time_bucket and selected_time_bucket != "全部時段":
     filtered_df = filtered_df[filtered_df["耗時"].apply(
         lambda d: matches_time_bucket(d, selected_time_bucket)
     )]
@@ -581,8 +636,9 @@ if search_keyword.strip():
 
 # -------------------------------------------------------------
 # 10. 料理清單展示（含分頁，避免資料量過大時卡頓）
+#     卡片顯示：圖片（固定尺寸）、菜名、風格/耗時、料理特色、
+#     「👀 查看完整食譜內容」按鈕 -> 點擊後彈出 Dialog（含圖片＋完整內容）
 # -------------------------------------------------------------
-st.write(f"共找到 **{len(filtered_df)}** 道推薦料理")
 
 PAGE_SIZE = 12
 current_filter_signature = (
@@ -611,12 +667,22 @@ else:
 
         for idx, (_, row) in enumerate(batch.iterrows()):
             with row_cols[idx]:
-                st.image(row["圖片"], use_container_width=True)
+                card_key = f"list_{start + i}_{idx}"
+
+                # 圖片：固定尺寸顯示
+                with st.container(key=f"{card_key}_imgbox"):
+                    st.image(row["圖片"], use_container_width=True)
+
                 st.subheader(row["菜名"])
                 st.caption(f"風格：{row['菜系']} ｜ 烹飪時間：{row['耗時']}")
                 st.write(f"**料理特色**：{row['特色']}")
 
-                render_full_recipe_details(row, key_prefix=f"list_{start + i}_{idx}")
+                with st.container(key=f"{card_key}_detailbtn"):
+                    open_detail = st.button(
+                        "👀 查看完整食譜內容", key=f"{card_key}_detail_btn", use_container_width=True
+                    )
+                if open_detail:
+                    show_recipe_dialog(row, card_key)
 
                 st.markdown("")
 
